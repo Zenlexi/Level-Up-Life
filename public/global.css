@@ -1,0 +1,55 @@
+:root{
+	--MAIN: #FDFAFE;
+	--ACC1: #76D9F9;
+	--ACC2: #F7A8D6;
+	--ACC3: #BFB0F5;
+	--TEXT: #191919;
+	font-size: 16px;
+}
+body{
+	background-color: var(--MAIN);
+	margin: 0;
+	font-family: "Arial", sans-serif;
+}
+.window{
+	background-color: var(--MAIN);
+	border-color: var(--ACC3);
+	border-style: solid;
+	border-width: .25rem .25rem .75rem .25rem;
+}
+.windowHeader{
+	background-color: var(--ACC3);
+	height: 2rem;
+	width: 100%;
+	margin: 0;
+}
+.windowHeader p{
+	margin: 0;
+	line-height: 2rem;
+	margin-left: .5rem;
+	float: left;
+}
+.close, .add{
+	cursor:pointer;
+	float: right;
+	margin-right: .25rem;
+	height: 1.5rem;
+	width: 1.5rem;
+	line-height: 1.5rem;
+	font-size: 18px;
+	text-align: center;
+	border: 1px outset var(--ACC2);
+	background-color: var(--MAIN);
+}
+.windowContent{
+	width: calc(100% - 1rem);
+	height: calc(100% - 3rem);
+	margin: .5rem;
+}
+button{
+	cursor:pointer;
+	background-color: var(--MAIN);
+	border: 2px outset var(--ACC2);
+	padding: .5rem 1rem;
+	font-size: 16px;
+}
